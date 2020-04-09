@@ -11,6 +11,7 @@ class CpuWidget : public SysInfoWidget
     // to respond to Qtimer::timeout
     Q_OBJECT
 public:
+    // Explicit mean we cant copy or convert a CpuWidget object
     explicit CpuWidget(QWidget* parent = 0);
 
 protected slots:
